@@ -1,3 +1,4 @@
+#ok so uh this bot "violated Twitter Rules and policies" so uh rip project :/
 import json
 import random
 import time
@@ -48,8 +49,8 @@ while True:
         raise Exception("Request returned an error: {} {}".format(
             response.status_code, response.text))
 
-    print("Response code: {}".format(response.status_code))
+        print("Response code: {}".format(response.status_code))
 
-    json_response = response.json()
-    print(json.dumps(json_response, indent=4, sort_keys=True))
-    time.sleep(30)
+        json_response = response.json()
+        print(json.dumps(json_response, indent=4, sort_keys=True))
+        time.sleep(30)
